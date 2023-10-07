@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Nasa';
+    src: url('./font/nasalization\ rg.ttf') format('truetype');
+    /* Puedes ajustar el resto de las propiedades de fuente según tus preferencias */
+    font-weight: normal;
+    font-style: normal;
+  }

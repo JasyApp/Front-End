@@ -1,9 +1,27 @@
-import { useEffect, useState } from "react";
+import {  useContext} from "react";
 import { BiSolidHeart } from "react-icons/bi";
 import React from "react";
+import { MesaggeContext } from "../context/MessageContext";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Card({ data }) {
   console.log(data);
+  const context = useContext(MesaggeContext);
+  const [mesagge, setMesagge] = context;
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    navigate("/categorias");
+    setMesagge(e);
+  };
+  const [counter, setCounter] = useState(0)
+  
+ 
+  
+
+  function handleLove(data) {
+    setCounter(counter + 1)
+  }
 
   return (
     <div
@@ -31,9 +49,9 @@ function Card({ data }) {
 
         <div className="w-1/2 pl-2 flex gap-2 items-center">
           <div className="flex">
-            <BiSolidHeart className="h-6 text-[#ff3040]" />
+            <BiSolidHeart onClick={()=>{handleLove(data)}} className="h-6 text-[#ff3040]" />
           </div>
-          <div className="flex">{data.likes} Likes</div>
+          <div className="flex">{counter} Likes</div>
         </div>
       </div>
 
@@ -48,12 +66,12 @@ function Card({ data }) {
         className="flex h-[100px] flex-wrap gap-3 mx-4 mb-3 text-[12px]"
       >
         {data.etiquetas.map((etiqueta) => (
-          <div
+          <button  onClick={()=>{handleSubmit(etiqueta)}}
             className="bg-white text-black rounded-full px-2 flex items-center h-8"
             key={etiqueta}
           >
             {etiqueta}
-          </div>
+          </button >
         ))}
       </div>
     </div>

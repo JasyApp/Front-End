@@ -29,7 +29,7 @@ function Noticias() {
         />
         <h1 style={{ fontFamily: "Poppins" }} className='text-white text-5xl mt-20 relative  z-200'>Descubre algunas noticias</h1>
         <hr className="border-2 w-2/3 m-10 rounded-xl relative  z-200" />
-        <div className='flex justify-center items-center flex-wrap gap-4'>
+        <div className='flex justify-center items-center flex-wrap gap-2'>
             {noticias.map((noticia)=>(
                 <Noticia key={noticia.descripcion} data={noticia}></Noticia>
             ))}

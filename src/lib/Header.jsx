@@ -7,7 +7,35 @@ function Header() {
     <div>
       <div className="bg-[#2f5aa8] w-screen p-2 flex justify-center items-center text-white relative z-20">
         Bienvenido a JasyApp donde la Ciencia y el Espacio se Encuentran.
-        Contribuyenos.
+        <a href="/devteam">By: DevTeam.</a>
+      </div>
+      
+      <div className="w-full  text-white justify-around  flex xl:hidden">
+        <Link to={"/"}>
+          <div
+            style={{ fontFamily: "Poppins" }}
+            className=" flex justify-center items-center text-center border-[#000] border-4 p-4 hover:border-b-white cursor-pointer"
+          >
+            Home
+          </div>
+        </Link>
+
+        <Link to={"/noticias"}>
+          <div
+            style={{ fontFamily: "Poppins" }}
+            className=" flex justify-center items-center text-center border-[#000] border-4 p-4 hover:border-b-white cursor-pointer"
+          >
+            Noticias
+          </div>
+        </Link>
+        <Link to={"/proyectos"}>
+          <div
+            style={{ fontFamily: "Poppins" }}
+            className=" flex justify-center items-center text-center border-[#000] border-4 p-4 hover:border-b-white cursor-pointer"
+          >
+            Proyectos
+          </div>
+        </Link>
       </div>
       <div className=" bg-[#000000] h-20 w-screen flex justify-center items-center gap-2 relative z-20">
         <div className="hidden xl:flex h-full w-1/3  justify-start mx-5 items-center">

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Acercade() {
   return (
-    <div>Acercade</div>
+    <div className='flex w-screen h-screen justify-center items-center'></div>
   )
 }
 

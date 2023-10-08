@@ -56,9 +56,10 @@ useEffect(()=>{
             )
             )}
           </div>
-          
-          
+          <hr className='border-2 w-2/3 m-9 rounded-xl'/>
+          <div  style={{fontFamily: 'Poppins'}} className='m-4 text-3xl font-bold text-white' >Noticias Flipantes</div>
         </div>
+        
     </div>
     
   )

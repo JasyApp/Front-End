@@ -7,7 +7,7 @@ function Card({data}) {
    
 
   return (
-    <div  key={data.id} className='bg-[#38393D] rounded-lg  h-[500px]  w-1/4 m-2 text-white flex justify-center gap-4 items-center flex-col'>
+    <div  key={data.id} className='bg-[#38393D] rounded-lg  h-[500px]  w-1/4 m-3 text-white flex justify-center gap-4 items-center flex-col'>
         <div className="flex justify-center items-center rounded-full bg-black  h-1/2 w-[220px] overflow-hidden mt-2 ">
             <img className="h-full"  src={data.imagen} alt="" />
         </div>
@@ -22,7 +22,7 @@ function Card({data}) {
         <div className="text-sm m-2" >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis dolore laudantium modi. Asperiores molestias cum numquam perferendis commodi voluptatum.
         </div>
-        <div style={{fontFamily: 'Poppins'}} className="flex flex-wrap gap-3 mx-4 mb-2 text-[12px]">
+        <div style={{fontFamily: 'Poppins'}} className="flex flex-wrap gap-3 mx-4 mb-3 text-[12px]">
             {data.etiquetas.map((etiqueta)=>(
                 <div  className="bg-white text-black rounded-full px-2 py-1" key={etiqueta}>{etiqueta}</div>
             ))}

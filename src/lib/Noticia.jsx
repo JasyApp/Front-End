@@ -1,7 +1,7 @@
 import React from "react";
 
 function Noticia({data}) {
-  console.log(data)
+  
   return (
     <a
       href={data.source}

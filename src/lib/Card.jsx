@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function Card({ data }) {
-  console.log(data);
+  console.log(data)
   const context = useContext(MesaggeContext);
   const [mesagge, setMesagge] = context;
   const navigate = useNavigate();
@@ -71,7 +71,7 @@ function Card({ data }) {
       >
         {data.etiquetas.map((etiqueta) => (
           <button  onClick={()=>{handleSubmit(etiqueta)}}
-            className="bg-white text-black rounded-full px-2 flex items-center h-8"
+            className="bg-white hover:border-gray-700 hover:underline border-2 border-white text-black rounded-full px-2 flex items-center h-8"
             key={etiqueta}
           >
             {etiqueta}

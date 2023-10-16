@@ -30,7 +30,7 @@ function Proyectos() {
             <div className="text-4xl w-3/3 xl:1/4 mt-20 font-bold ">Proyectos</div>
             <div className="flex gap-4">
               <span
-                className="cursor-pointer"
+                className="cursor-pointer underline"
                 onClick={() => {
                   navigate("/");
                 }}
@@ -41,7 +41,7 @@ function Proyectos() {
                 {" "}
                 <IoIosArrowForward className="w-4" />{" "}
               </span>
-              <span className="cursor-pointer underline">Proyectos</span>
+              <span className="cursor-pointer ">Proyectos</span>
             </div>
           </div>
 
@@ -57,10 +57,9 @@ function Proyectos() {
           </div>
         </div>
       </div>
-
       <hr className="border-2 w-2/3 m-10 rounded-xl" />
       <div className="flex-wrap flex w-screen justify-center ">
-        {proyectos.map((proyecto, i) => {
+        {proyectos.map((proyecto) => {
           return <Card data={proyecto} />;
         })}
       </div>

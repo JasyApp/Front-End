@@ -35,7 +35,7 @@ function Form() {
 
         })
 
-        console.log(response)
+        
         navigate("/proyectos")
     }
 

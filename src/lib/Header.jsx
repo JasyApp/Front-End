@@ -54,7 +54,7 @@ function Header() {
                   id="search"
                   name="search"
                   class="w-full py-1 px-4 bg-inherit border-4 border-white border-hidden text-gray-500 focus:outline-none focus:border-blue-500"
-                  placeholder="Search"
+                  placeholder="Busca Proyectos"
                 />
                 <button class="border-l-2 inset-y-0 right-0 px-4 py-2 bg-[#000] text-white font-semibold border-white">
                   Buscar

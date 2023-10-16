@@ -23,7 +23,7 @@ function layer() {
 
   const context = useContext(MesaggeContext);
   const [mesagge, setMesagge] = context;
-  console.log(mesagge);
+  
   return (
     <div className="flex justify-center items-center flex-wrap flex-col">
       <h1 className="text-white text-4xl m-6 font-bold">Estos son los proyectos sobre <h6 className="text-[#2f5aa8]">"{mesagge}"</h6></h1>

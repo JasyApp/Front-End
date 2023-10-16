@@ -34,7 +34,7 @@ function Noticias() {
           Noticias
         </h1>
         <div className="flex gap-4">
-          <span className="cursor-pointer"
+          <span className="cursor-pointer underline"
             onClick={() => {
               navigate("/");
             }}
@@ -42,7 +42,7 @@ function Noticias() {
             Home
           </span>
           <span> <IoIosArrowForward className="w-4"/>  </span>
-          <span className="cursor-pointer underline">Noticias</span>
+          <span className="cursor-pointer ">Noticias</span>
         </div>
       </div>
 

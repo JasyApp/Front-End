@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { api } from "../utils/api";
+import { useNavigate } from "react-router-dom";
 
 function Form() {
+  let navigate = useNavigate()
     const [titleInput, setTitleInput] = useState("")
     const [nameInput, setNameInput] = useState("")
     const [profileURLInput, setProfileURLInput] = useState("")
@@ -34,6 +36,7 @@ function Form() {
         })
 
         console.log(response)
+        navigate("/proyectos")
     }
 
   return (

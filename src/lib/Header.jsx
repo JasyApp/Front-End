@@ -8,12 +8,12 @@ function Header() {
   
   return (
     <div>
-      <div className="bg-[#2f5aa8] w-screen p-2 flex justify-center items-center text-white relative z-20">
+      <div className="bg-[#2f5aa8] relative w-screen p-2 flex justify-center items-center text-white  z-20">
         Bienvenido a JasyApp donde la Ciencia y el Espacio se Encuentran
         <a className="cursor-pointer mx-2 "
           onClick={() => {navigate("/devteam")}}
         >
-           By: <span >DevTeam.</span> 
+           By: <span className="underline" >DevTeam.</span> 
         </a>
       </div>
 

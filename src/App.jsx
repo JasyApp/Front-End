@@ -11,6 +11,7 @@ import Loyer from "./lib/Loyer";
 import MesaggeProvider from "./context/MessageContext";
 import Form from "./lib/Form";
 import DevTeam from "./lib/DevTeam";
+import ProyectosPage from "./lib/ProyectosPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="categorias" element={<Loyer />}></Route>
             <Route path="añadir" element={<Form />}></Route>
             <Route path="devteam" element={<DevTeam />}></Route>
+            <Route path="proyectpage" element={<ProyectosPage/>}></Route>
           </Route>
         </Routes>
       </MesaggeProvider>

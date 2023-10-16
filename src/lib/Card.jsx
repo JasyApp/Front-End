@@ -15,6 +15,10 @@ function Card({ data }) {
     setMesagge(e);
   };
   const [counter, setCounter] = useState(0)
+  const handleProyect = (e) => {
+    navigate("/proyectpage");
+    setMesagge(e);
+  };
   
  
   
@@ -24,7 +28,7 @@ function Card({ data }) {
   }
 
   return (
-    <div
+    <div onClick={()=>{handleProyect(data)}}
       key={data.id}
       className="bg-[#38393D] rounded-lg  h-[500px]  w-[300px] m-2 text-white flex justify-center gap-4 items-center flex-col"
     >

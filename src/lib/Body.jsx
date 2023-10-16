@@ -42,7 +42,7 @@ function Body() {
     <div className="bg-black z-20 relative overflow-hidden">
       <div className="bg-black w-screen h-[700px] xl:h-[600px] flex justify-center items-center bg-repeat  ">
         <img
-          className="fixed z-1 left-1 "
+          className="fixed w-2/2 z-1 bottom-0 left-0 "
           src="https://cdn.discordapp.com/attachments/749326094800519179/1160364125680046131/file.png?ex=6534644e&is=6521ef4e&hm=d9573c014332390a791af30756c7b8ba0c5e0010a1b74da63f4d23412d978660&"
           alt=""
         />

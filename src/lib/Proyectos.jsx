@@ -25,13 +25,13 @@ function Proyectos() {
     <div className="flex justify-start items-center mt-10  flex-col m-10 ">
       <div className="flex w-full xl:flex-row flex-col "> 
         <div className="w-1/3 hidden xl:flex"></div>
-        <div className="text-white text-4xl w-3/3 xl:1/3 mb-4 font-bold">
-          Explore todos los proyectos.
+        <div className="text-white text-4xl w-3/3 xl:1/3 mb-4 font-bold text-center">
+          Explore todos los proyectos
         </div>
         <div className="w-3/3 ml-6 xl:1/3 flex justify-center items-center" onClick={() => {
             navigate("/añadir")
         }}>
-            <div className="text-white bg-[#2f5aa8] h-10 w-32 px-3 py-2 rounded-3xl cursor-pointer mr-6">Subir Proyecto </div>
+            <div className="text-white bg-[#2f5aa8] h-10  px-6 py-4 flex justify-center items-center rounded-3xl cursor-pointer mr-6">Subir Proyecto </div>
         </div>
       </div>
 

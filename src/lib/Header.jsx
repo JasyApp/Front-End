@@ -1,16 +1,23 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import "../font.css";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate()
+  
   return (
     <div>
       <div className="bg-[#2f5aa8] w-screen p-2 flex justify-center items-center text-white relative z-20">
-        Bienvenido a JasyApp donde la Ciencia y el Espacio se Encuentran.
-        <a href="/devteam">By: DevTeam.</a>
+        Bienvenido a JasyApp donde la Ciencia y el Espacio se Encuentran
+        <a className="cursor-pointer mx-2 "
+          onClick={() => {navigate("/devteam")}}
+        >
+           By: <span >DevTeam.</span> 
+        </a>
       </div>
-      
-      <div className="w-full  text-white justify-around  flex xl:hidden">
+
+      <div className="w-full text-white justify-around  flex xl:hidden">
         <Link to={"/"}>
           <div
             style={{ fontFamily: "Poppins" }}
